@@ -1,0 +1,8 @@
+<h2>User Detail</h2>
+
+<div *ngIf="user">
+  <p><strong>Name:</strong> {{ user?.firstName }} {{ user?.lastName }}</p>
+  <p><strong>Birthday:</strong> {{ user?.birthday | date }}</p> <!-- Hier wird der DatePipe angewendet -->
+  <p><strong>Email:</strong> {{ user?.email }}</p>
+  <p><strong>Gender:</strong> {{ user?.gender }}</p>
+</div>
